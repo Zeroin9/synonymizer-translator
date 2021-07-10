@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Google Translate Synonimizer</title>
+
+    <meta name="description" content="Google Translate Synonimizer">
+    <meta name="author" content="z3r0ing">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha512-FOS5ANNUsuvefA5Fm6hZBLsxqfF105LIysEgV8VNz29jZLVYIhI+MOLKPBmMXgkHhARFHf5pE7KbXOLE6TXW0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-1 col-sm-0">
+		</div>
+		<div class="col-md-10 col-sm-12">
+			<div class="page-header">
+				<h1>
+					Google Translate Synonimizer
+				</h1>
+			</div>
+			<p>
+				Введите в вверхнее тескстовое поле текст на русском. После нажатия на кнопку, текст будет переведён на японский, затем на английский. и вновь на русский. Результат будет выведен в нижнем текстовом поле.
+			</p>
+			<p>
+				Для верной работы алгоритма:
+				<ul>
+				    <li>Проверьте тест на орфографические и грамматические ошибки</li>
+				    <li>Проверьте правильность расстановки знаков препинания</li>
+				    <li>Избавьте по возможности текст от аббревиатур и сокращений</li>
+				    <li>Чем точнее текст, чем больше в нём технической терминологии тем менее он будет синонимизироваться</li>
+				</ul>
+			</p>
+		</div>
+		<div class="col-md-1 col-sm-0">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1 col-sm-0">
+		</div>
+		<div class="col-md-10 col-sm-12">
+			<form role="form" method="post">
+				<div class="form-group">
+					<textarea class="form-control" id="input_textarea" rows="5" name="source_text">{{ source_text }}</textarea>
+				</div>
+				<div class="form-group">
+				<button type="submit" class="btn btn-primary">
+					Синонимизировать
+				</button>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-1 col-sm-0">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1 col-sm-0">
+		</div>
+		<div class="col-md-10 col-sm-12">
+			<div class="form-group">
+					<textarea class="form-control" id="output_textarea" rows="5">{{ result_text }}</textarea>
+			</div>
+		</div>
+		<div class="col-md-1 col-sm-0">
+		</div>
+	</div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha512-Cy3gSrKCS8aJ7AIaammc0wLXyKRmTa8ntgHvU01Tuz4EdsqVgk/lKzFm/b/8RxOWBaoHI2uGLLU6rXMbqKcGHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
